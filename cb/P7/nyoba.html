@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Latihan Membuat Menu Dropdown Dengan CSS</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+        .menu_utama {
+        display: inline-block;
+        vertical-align: top;
+        width: 80px;
+        text-align:center;
+        background-color: #11698e;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding:10px 15px;
+        }
+        .menu_utama:hover{
+        background-color: #19456b;
+        }
+        .menu_sub {
+        display: none;
+        margin-top: 10px;
+        list-style-type: none;
+        margin-left: -55px;
+        margin-bottom: -20px;
+        width: 220px;
+        }
+        .menu_sub a{
+        display: block;
+        width: 100%;
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        border-bottom:solid 1px #a3d2ca;
+        background-color: navy;
+        }
+        .menu_sub a:hover{
+        background-color: #a3d2ca;
+        }
+        #menu_dropdown .menu_utama:hover > .menu_sub {
+        display:block;
+        }
+   </style>
+</head>
+<body>
+<ul id="menu_dropdown">
+   <li class="menu_utama">Home</li>
+   <li class="menu_utama">Artikel
+   <ul class="menu_sub">
+     <li><a href="#">Politik</a></li>
+     <li><a href="#">Budaya</a></li>
+     <li><a href="#">Ekonomi</a></li>
+     <li><a href="#">Serba-serbi</a></li>
+     <li><a href="#">Hobby</a></li>
+   </ul>
+   </li>
+   <li class="menu_utama">Artikel 2
+   <ul class="menu_sub">
+     <li><a href="#">Politik 2</a></li>
+     <li><a href="#">Budaya 2</a></li>
+     <li><a href="#">Ekonomi 2</a></li>
+     <li><a href="#">Serba-serbi 2</a></li>
+     <li><a href="#">Hobby 2</a></li> 
+   </ul>
+   </li>
+   <li class="menu_utama">Artikel 3
+   <ul class="menu_sub">
+     <li><a href="#">Politik 3</a></li>
+     <li><a href="#">Budaya 3</a></li>
+     <li><a href="#">Ekonomi 3</a></li>
+     <li><a href="#">Serba-serbi 3</a></li>
+     <li><a href="#">Hobby 3</a></li>
+   </ul>
+   </li>
+</ul>
+<h1>Latihan Membuat Menu Dropdown Dengan CSS</h1>
+</body>
+</html>
